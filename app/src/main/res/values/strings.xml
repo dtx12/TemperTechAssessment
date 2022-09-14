@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Temper tech assessment</string>
+    <string name="shifts_no_internet_connection_error">No internet connection detected</string>
+    <string name="shifts_loading_error">An error occurred during loading the shifts</string>
+    <string name="shifts_retry">Retry</string>
+    <string name="shifts_km_format">%s km</string>
+    <string name="shifts_m_format">%s m</string>
+    <string name="shifts_category_and_distance_format">%s • %s</string>
+    <string name="shifts_filters">Filters</string>
+    <string name="shifts_sign_up">Sign Up</string>
+    <string name="shifts_sign_in">Sign In</string>
+
+    <string name="sign_in_title">Sign In</string>
+
+    <string name="sign_up_title">Sign Up</string>
+</resources>

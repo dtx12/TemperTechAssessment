@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        androidPluginVersion = "7.2.1"
+        kotlinGradlePluginVersion = "1.6.10"
+        pagingVersion = "3.1.1"
+        hiltVersion = "2.43.2"
+        coroutinesVersion = "1.6.3"
+        navVersion = "2.5.2"
+        retrofitVersion = "2.9.0"
+        okHttpVersion = "4.9.3"
+        glideVersion = "4.12.0"
+        coreCtxVersion = "1.8.0"
+        appcompatVersion = "1.5.0"
+        materialVersion = "1.6.1"
+        constraintLayoutVersion = "2.1.4"
+        mockkVersion = "1.12.2"
+        junitVersion = "4.13.2"
+        archCoreTestingVersion = "2.1.0"
+        threetenabpVersion = '1.2.4'
+        locationVersion = '20.0.0'
+        googleMapsVersion = '18.1.0'
+        secretsGradlePluginVersion = '2.0.1'
+    }
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$androidPluginVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinGradlePluginVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+        classpath "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:$secretsGradlePluginVersion"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

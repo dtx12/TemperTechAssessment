@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/shiftsFragment">
+
+    <fragment
+        android:id="@+id/shiftsFragment"
+        android:name="com.dtx12.tempertechassessment.features.shifts.ShiftsFragment"
+        tools:layout="@layout/fragment_shifts">
+
+        <action
+            android:id="@+id/shiftsFragmentToSignInFragment"
+            app:destination="@id/signInFragment" />
+
+        <action
+            android:id="@+id/shiftsFragmentToSignUpFragment"
+            app:destination="@id/signUpFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.dtx12.tempertechassessment.features.signin.SignInFragment" />
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.dtx12.tempertechassessment.features.signup.SignUpFragment" />
+
+</navigation>
